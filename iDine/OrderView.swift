@@ -13,6 +13,7 @@ struct OrderView: View {
     
     var body: some View {
         NavigationView {
+            Section {
             List {
                 ForEach(order.items) { item in
                     HStack {
@@ -22,9 +23,12 @@ struct OrderView: View {
                     }
                 }
             }
+            }
+            
+            
             
             Section {
-                NavigationLink(destination: Text("Check out")) {
+                NavigationLink(destination: CheckoutView()) {
                     Text("Place Order")
                 }
             }
@@ -39,6 +43,8 @@ struct OrderView_Previews: PreviewProvider {
     static let order = Order()
     
     static var previews: some View {
+        NavigationView {
         OrderView().environmentObject(order)
+        }
     }
 }

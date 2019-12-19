@@ -20,6 +20,8 @@
 		3415819B23AB283D008DFC16 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415819A23AB283D008DFC16 /* ItemRow.swift */; };
 		3415819D23AB3B0C008DFC16 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415819C23AB3B0C008DFC16 /* ItemDetail.swift */; };
 		3415819F23AB4DD6008DFC16 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415819E23AB4DD6008DFC16 /* OrderView.swift */; };
+		341581A123AB50C3008DFC16 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341581A023AB50C3008DFC16 /* AppView.swift */; };
+		341581A323AB5657008DFC16 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341581A223AB5657008DFC16 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		3415819A23AB283D008DFC16 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		3415819C23AB3B0C008DFC16 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		3415819E23AB4DD6008DFC16 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		341581A023AB50C3008DFC16 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		341581A223AB5657008DFC16 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				3415819A23AB283D008DFC16 /* ItemRow.swift */,
 				3415819C23AB3B0C008DFC16 /* ItemDetail.swift */,
 				3415819E23AB4DD6008DFC16 /* OrderView.swift */,
+				341581A023AB50C3008DFC16 /* AppView.swift */,
+				341581A223AB5657008DFC16 /* CheckoutView.swift */,
 			);
 			path = iDine;
 			sourceTree = "<group>";
@@ -169,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3415819723AB1DCB008DFC16 /* Menu.swift in Sources */,
+				341581A323AB5657008DFC16 /* CheckoutView.swift in Sources */,
 				3415817F23AB1D5B008DFC16 /* AppDelegate.swift in Sources */,
 				3415818123AB1D5B008DFC16 /* SceneDelegate.swift in Sources */,
 				3415819B23AB283D008DFC16 /* ItemRow.swift in Sources */,
@@ -176,6 +183,7 @@
 				3415819D23AB3B0C008DFC16 /* ItemDetail.swift in Sources */,
 				3415819F23AB4DD6008DFC16 /* OrderView.swift in Sources */,
 				3415818323AB1D5B008DFC16 /* ContentView.swift in Sources */,
+				341581A123AB50C3008DFC16 /* AppView.swift in Sources */,
 				3415819323AB1DAA008DFC16 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
