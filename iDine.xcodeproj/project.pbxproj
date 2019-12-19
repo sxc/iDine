@@ -18,6 +18,7 @@
 		3415819723AB1DCB008DFC16 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415819523AB1DCB008DFC16 /* Menu.swift */; };
 		3415819923AB1DE8008DFC16 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 3415819823AB1DE8008DFC16 /* menu.json */; };
 		3415819B23AB283D008DFC16 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415819A23AB283D008DFC16 /* ItemRow.swift */; };
+		3415819D23AB3B0C008DFC16 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3415819C23AB3B0C008DFC16 /* ItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3415819523AB1DCB008DFC16 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		3415819823AB1DE8008DFC16 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		3415819A23AB283D008DFC16 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		3415819C23AB3B0C008DFC16 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				3415818C23AB1D5D008DFC16 /* Info.plist */,
 				3415818623AB1D5D008DFC16 /* Preview Content */,
 				3415819A23AB283D008DFC16 /* ItemRow.swift */,
+				3415819C23AB3B0C008DFC16 /* ItemDetail.swift */,
 			);
 			path = iDine;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				3415818123AB1D5B008DFC16 /* SceneDelegate.swift in Sources */,
 				3415819B23AB283D008DFC16 /* ItemRow.swift in Sources */,
 				3415819623AB1DCB008DFC16 /* Order.swift in Sources */,
+				3415819D23AB3B0C008DFC16 /* ItemDetail.swift in Sources */,
 				3415818323AB1D5B008DFC16 /* ContentView.swift in Sources */,
 				3415819323AB1DAA008DFC16 /* Helper.swift in Sources */,
 			);
