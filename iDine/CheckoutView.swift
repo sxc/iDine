@@ -14,6 +14,17 @@ struct CheckoutView: View {
     @State private var paymentType = 0
     @State private var addLoyaltyDetails = false
     @State private var loyaltyNumber = ""
+    static let tipAmounts = [10, 15, 20, 25, 0]
+    @State private var tipAmount = 1
+    
+    var totalPrice: Double {
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(Self.tipAmounts[tipAmount])
+        return total + tipValue
+    }
+    
+    @State private var showingPaymentAlert = false
+    
     
     
     var body: some View {
@@ -26,11 +37,35 @@ struct CheckoutView: View {
                 }
             }
             
+            Section(header: Text("Add a tip?")) {
+                Picker("Percentage:", selection: $tipAmount) {
+                    ForEach(0 ..< Self.tipAmounts.count) {
+                        Text("\(Self.tipAmounts[$0])%")
+                    }
+                }.pickerStyle(SegmentedPickerStyle())
+            }
+            
             Toggle(isOn: $addLoyaltyDetails.animation()) {
                 Text("Add iDine loyalty card")
             }
             
-            TextField("Enter your iDine ID", text: $loyaltyNumber)
+            if addLoyaltyDetails {
+                TextField("Enter your iDine ID", text: $loyaltyNumber)
+            }
+        
+            Section(header:
+                     Text("TOTAL: $\(totalPrice, specifier: "%.2f")")
+                     ) {
+                         Button("Confirm order") {
+                            self.showingPaymentAlert.toggle()
+                         }
+                     }
+            
+            .alert(isPresented: $showingPaymentAlert) {
+                Alert(title: Text("Order confirmed"), message: Text("Your total was $\(totalPrice, specifier: "%.2f") - thank you!"), dismissButton: .default(Text("OK")))
+            }
+        
+         
         }
         .navigationBarTitle(Text("Payment"), displayMode: .inline)
     }
