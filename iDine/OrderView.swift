@@ -19,15 +19,15 @@ struct OrderView: View {
         NavigationView {
             Section {
                 List {
-                ForEach(order.items) { item in
-                    HStack {
-                        Text(item.name)
-                        Spacer()
-                        Text("$\(item.price)")
-                    }
-                }.onDelete(perform: deleteItems)
+                    ForEach(order.items) { item in
+                        HStack {
+                            Text(item.name)
+                            Spacer()
+                            Text("$\(item.price)")
+                        }
+                    }.onDelete(perform: deleteItems)
                 }
-            }
+            
             
             
             
@@ -41,6 +41,7 @@ struct OrderView: View {
         .listStyle(GroupedListStyle())
         .navigationBarItems(trailing: EditButton())
         
+        }
     }
 }
 
